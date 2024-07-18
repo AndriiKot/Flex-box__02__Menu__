@@ -8,3 +8,60 @@
   box-sizing: inherit;
 }
 
+nav {
+  background-color: tomato;
+  color: #fff;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logo {
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        text-align: center;
+      }
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      padding: 0.5rem 1rem;
+      .ltitle {
+        width: 100%;
+        font-size: 30px;
+      }
+      .lsub {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+
+    menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: inherit;
+
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}
